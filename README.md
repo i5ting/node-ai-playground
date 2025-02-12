@@ -7,15 +7,11 @@
 
 是一个非常好的易于学习的Node.js AI Agent开发项目模版。
 
-1、基于next，ai-sdk，实现基于openai模型的chatbot功能，技术栈和功能很实用。
-
-2、足够小，100个ts文件，代码行数10000行左右，结构清晰，简单易学。
-
-3、前后端，典型的全栈应用，包含postgre db，鉴权，react，ai，非常全面了。很多最佳实践，比如toast库，密码加盐处理等。
-
-4、可以使用aihubmix等openai代理服务，支持支付宝。
-
-5、扩展性强，使用其他模型，以及langchain、llamaindex等。
+- 1、基于next，ai-sdk，实现基于openai模型的chatbot功能，技术栈和功能很实用。
+- 2、足够小，100个ts文件，代码行数10000行左右，结构清晰，简单易学。
+- 3、前后端，典型的全栈应用，包含postgre db，鉴权，react，ai，非常全面了。很多最佳实践，比如toast库，密码加盐处理等。
+- 4、可以使用aihubmix等openai代理服务，支持支付宝。
+- 5、扩展性强，使用其他模型，以及langchain、llamaindex等。
 
 部署还是有点麻烦，涉及的内容还是比较多的。
 
@@ -137,7 +133,7 @@ export function AuthForm({
 
 ### 8、css
 
-基于tailwindcss和postcss，写法很舒服
+基于tailwindcss和postcss，写法很舒服，ai出码也很方便，就容易写脏。算最佳时间，如果有unocss就更好了。
 
 ### 9、http 请求用的swr
 
