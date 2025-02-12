@@ -1,7 +1,7 @@
 # playground
 
 
-## 学习
+## 学习ai-chatbot
 
 [https://github.com/vercel/ai-chatbot](https://github.com/vercel/ai-chatbot是一个非常好的易于学习的Node.js)
 
@@ -55,6 +55,117 @@ const openai = createOpenAI({
 执行pnpm dev启动，此时就是一个完全的
 
 ![![](20250212092002.png)](imgs/20250212092116.png)
+
+### 0、基础
+
+需要掌握nextjs、react、ts、vercel平台部署。
+
+这里面的没没有写，下面是我看到的一些比较好的小的最佳实践。
+
+### 1、组件
+
+应该是最好的toast了
+
+```
+import { Toaster } from 'sonner';
+```
+
+@radix-ui是个很好的ui库，不知道为啥没用shadcn-ui。
+
+### 2、db操作
+
+基于drizzle操作db，这个选型也是极好的，基本上prisma和drizzle这2个最佳选择了
+
+### 3、npm run db:migrate
+
+里面有migrate，熟悉rails的都清楚，建表，做数据清洗都是极好的。
+参考npm run db:migrate
+
+### 4、选用serverless版本的postgre：neon
+
+这也算最佳实践。
+
+https://console.neon.tech/
+
+这个唯一麻烦的是节点都在国外，如果是出海应用，极好。否则rt可能会超过1s。
+
+### 5、用户密码加盐
+
+```
+export async function createUser(email: string, password: string) {
+  const salt = genSaltSync(10);
+  const hash = hashSync(password, salt);
+
+  try {
+    return await db.insert(user).values({ email, password: hash });
+  } catch (error) {
+    console.error('Failed to create user in database');
+    throw error;
+  }
+}
+```
+
+### 6、目录结构合理
+
+![](imgs/20250212233751.png)
+
+### 7、react组件抽象度适中
+
+比如AuthForm，
+
+```
+export function AuthForm({
+  action,
+  children,
+  defaultEmail = '',
+}: {
+  action: NonNullable<
+    string | ((formData: FormData) => void | Promise<void>) | undefined
+  >;
+  children: React.ReactNode;
+  defaultEmail?: string;
+}) {
+  ...
+}
+```
+
+用法，注册和登录都可以复用
+
+```
+<AuthForm action={handleSubmit} defaultEmail={email}>
+```
+
+### 8、css
+
+基于tailwindcss和postcss，写法很舒服
+
+### 9、http 请求用的swr
+
+支持cache的http client。很实用，很好的库
+
+### 10、ai-sdk用法
+
+可圈可点
+
+```
+export const myProvider = customProvider({
+  languageModels: {
+    "chat-model-small": openai("gpt-4o-mini"),
+    "chat-model-large": openai("gpt-4o"),
+    "chat-model-reasoning": wrapLanguageModel({
+      model: fireworks("accounts/fireworks/models/deepseek-r1"),
+      middleware: extractReasoningMiddleware({ tagName: "think" }),
+    }),
+    "title-model": openai("gpt-4-turbo"),
+    "block-model": openai("gpt-4o-mini"),
+  },
+  imageModels: {
+    "small-model": openai.image("dall-e-2"),
+    "large-model": openai.image("dall-e-3"),
+  },
+});
+```
+
 
 ## 从LlamaIndexTs学习
 
