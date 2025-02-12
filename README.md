@@ -163,6 +163,11 @@ export const myProvider = customProvider({
 ```
 
 
+### 高级玩法
+
+参考https://chatkit.app/，功能界面都差不多，自己参考这个产品功能去实现，也是个不错的学习方式。
+
+
 ## 从LlamaIndexTs学习
 
 
