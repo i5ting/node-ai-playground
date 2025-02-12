@@ -10,7 +10,7 @@ https://github.com/vercel/ai-chatbot
 本地部署
 
 - 参考文档
-- 创建postgres
+- 创建postgres，使用vercel的在线的serverless版postgres。
 - 执行本地db初始化和迁移
 
 执行pnpm dev启动，注册用户，然后就可以成功访问了。但大模型用不了
