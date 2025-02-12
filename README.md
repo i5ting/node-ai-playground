@@ -3,9 +3,22 @@
 
 ## 学习
 
-https://github.com/vercel/ai-chatbot
+[https://github.com/vercel/ai-chatbot](https://github.com/vercel/ai-chatbot是一个非常好的易于学习的Node.js)
 
-这个项目代码质量还不错。
+是一个非常好的易于学习的Node.js AI Agent开发项目模版。
+
+1、基于next，ai-sdk，实现基于openai模型的chatbot功能，技术栈和功能很实用。
+
+2、足够小，100个ts文件，代码行数10000行左右，结构清晰，简单易学。
+
+3、前后端，典型的全栈应用，包含postgre db，鉴权，react，ai，非常全面了。很多最佳实践，比如toast库，密码加盐处理等。
+
+4、可以使用aihubmix等openai代理服务，支持支付宝。
+
+5、扩展性强，使用其他模型，以及langchain、llamaindex等。
+
+部署还是有点麻烦，涉及的内容还是比较多的。
+
 
 本地部署
 
