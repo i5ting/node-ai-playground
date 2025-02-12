@@ -17,7 +17,7 @@ https://github.com/vercel/ai-chatbot
 
 大家都知道openai在国内的情况，
 
-这里采用https://doc.aihubmix.com/coding/%E5%9C%A8%E5%AE%98%E6%96%B9%20openai%20%E5%BA%93%E4%B8%AD%E4%BD%BF%E7%94%A8，支付宝付费，基本够用，充个1刀或5刀。
+这里采用[aihubmix](https://doc.aihubmix.com/coding/%E5%9C%A8%E5%AE%98%E6%96%B9%20openai%20%E5%BA%93%E4%B8%AD%E4%BD%BF%E7%94%A8)，支付宝付费，基本够用，充个1刀或5刀。
 
 
 原@ai-sdk/openai里的openai方法，没有baseURL的。
