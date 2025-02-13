@@ -66,7 +66,9 @@ const openai = createOpenAI({
 import { Toaster } from 'sonner';
 ```
 
-@radix-ui是个很好的ui库，不知道为啥没用shadcn-ui。
+@radix-ui是个很好的ui库，radix-ui 是逻辑，shadcn 是 UI。基本组件 radix-ui，表格 tanstack-table，表单 react-form-hooks，然后加上 shadcn/ui 的皮.
+
+感谢：https://github.com/i5ting/node-ai-playground/issues/1
 
 ### 2、db操作
 
@@ -170,6 +172,11 @@ export const myProvider = customProvider({
 
 ## 从LlamaIndexTs学习
 
+
+
+## 更好的client
+
+https://github.com/block/goose
 
 ## other
 
