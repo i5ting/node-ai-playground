@@ -169,6 +169,14 @@ export const myProvider = customProvider({
 
 参考https://chatkit.app/，功能界面都差不多，自己参考这个产品功能去实现，也是个不错的学习方式。
 
+## 学习ai搜索
+
+前几天发的ai-chatbot大火，今天分享一个ai搜索，这个开源项目也很简单，非常适合入门。如果已经熟悉了ai-sdk，这里再学一些搜索服务继承，也是极好的。
+
+https://github.com/zaidmukaddam/scira
+
+
+
 
 ## 从LlamaIndexTs学习
 
