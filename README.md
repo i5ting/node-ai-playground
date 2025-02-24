@@ -186,6 +186,10 @@ https://github.com/zaidmukaddam/scira
 
 https://github.com/block/goose
 
+## 应用
+
+https://github.com/mastra-ai/mastra
+
 ## other
 
 
